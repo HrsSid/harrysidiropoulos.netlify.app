@@ -1,0 +1,62 @@
+/*
+styles referring to .html files with buttons                         */
+.Scroll-To-Top-Button {
+    text-decoration: none;
+    font-size: medium;
+    color:#e9ecef;
+    padding: 5px 10px;
+    border: 1px solid #d25050;
+    position: relative;
+}
+.Scroll-To-Top-Button::before,
+.Scroll-To-Top-Button::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: inherit;
+    transition: all 0.5s;
+}
+.Scroll-To-Top-Button::before {
+    top: -11px;
+    left: -11px;
+    border-width: 2px 0 0 2px;
+}
+.Scroll-To-Top-Button::after {
+    bottom: -11px;
+    right: -11px;
+    border-width: 0 2px 2px 0;
+}
+.Scroll-To-Top-Button:hover::before,
+.Scroll-To-Top-Button:hover::after {
+    cursor: pointer;    
+    width: calc(100% + 19px);
+    height: calc(100% + 19px);
+}
+.Scroll-To-Top-Button:hover {
+    border: 1px solid #d250507d;
+}
+
+/*=============================================================================================================================*/
+
+.Contact-Me-Button-Welcome-Screen {
+    display: inline-block;
+    text-decoration: none;
+    color: #d25050;
+    border: 1px solid #c0c0c2;
+    border-radius: 3px;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: absolute;
+    justify-content: center;
+    transform: translate(-50%);
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease 0s;
+}
+.Contact-Me-Button-Welcome-Screen:hover {
+    color: #fff;
+    border: 1px solid #d25050;
+    background: #d25050;
+}
