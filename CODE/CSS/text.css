@@ -1,0 +1,211 @@
+/*
+styles referring to .html files with text                            */
+* {
+    position: relative;
+    text-align: center;   
+}
+
+/*
+index.html only:                                                      */
+
+/* welcome screen */
+.Welcome-Screen {
+    /* shape */
+    background: #1d2029;
+    min-height: 100vh;
+    width: 100%;
+
+    /* position */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , 35%);
+}
+
+.Welcome-Screen .Title-Welcome-Screen::after {
+    content: "Harrys Sidiropoulos";
+    font-size: xxx-large;
+}
+.Welcome-Screen .Title-Welcome-Screen:hover::after {
+    font-size: xxx-large;
+    font-weight: 400;
+    color: #959595;
+    cursor: pointer;
+}
+
+.Welcome-Screen .Subtitle-Welcome-Screen::after {
+    content: "Web Developer";
+    font-size: xx-large;
+}
+.Welcome-Screen .Subtitle-Welcome-Screen:hover::after {
+    font-size: xx-large;
+    font-weight: 400;
+    color: #959595;
+    cursor: pointer;
+}
+
+/* skills screen */
+.Skills-Screen {
+    /* shape */
+    background: #1d2029;
+    min-height: 60vh;
+    width: 100%;
+
+    /* position */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , 35%);
+}
+.Skills-Screen fieldset {
+    /* setup */
+    margin-left: 20rem;
+    margin-right: 20rem;
+
+    /* settings */
+    position: relative;
+    border: 3px solid #d25050;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+.Skills-Screen fieldset:hover {
+    border: 3px solid #d250508e;
+}
+.Skills-Screen legend {
+    font-size: xx-large;
+    transition: all 0.2s;
+}
+.Skills-Screen legend:hover {
+    color: #959595;
+}
+.Skills-Screen-Description {
+    text-align: left;
+    font-size: medium;
+    transition: all 0.2s;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* about me screen */
+.About-Me-Screen {
+    margin-top: 400px;
+    /* shape */
+    background: #1d2029;
+    min-height: 60vh;
+    width: 100%;
+
+    /* position */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , 35%);
+}
+.About-Me-Screen fieldset {
+    /* setup */
+    margin-left: 20rem;
+    margin-right: 20rem;
+
+    /* settings */
+    position: relative;
+    border: 3px solid #d25050;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+.About-Me-Screen fieldset:hover {
+    border: 3px solid #d250508e;
+}
+.About-Me-Screen legend {
+    font-size: xx-large;
+    transition: all 0.2s;
+}
+.About-Me-Screen legend:hover {
+    color: #959595;
+}
+.About-Me-Screen-Description {
+    text-align: left;
+    font-size: medium;
+    transition: all 0.2s;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Project screen */
+.Project-Screen {
+    margin-top: 400px;
+    /* shape */
+    background: #1d2029;
+    min-height: 100vh;
+    width: 100%;
+
+    /* position */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , 35%);
+}
+.Project-Screen fieldset {
+    /* setup */
+    margin-left: 20rem;
+    margin-right: 20rem;
+
+    /* settings */
+    position: relative;
+    border: 3px solid #d25050;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+.Project-Screen fieldset:hover {
+    border: 3px solid #d250508e;
+}
+.Project-Screen legend {
+    font-size: xx-large;
+    transition: all 0.2s;
+}
+.Project-Screen legend:hover {
+    color: #959595;
+}
+.Project-Screen-Description {
+    text-align: left;
+    font-size: medium;
+    transition: all 0.2s;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* back to top button */
+.Scroll-To-Top {
+    z-index: 0;
+    position: fixed;
+
+    top: 92%;
+    left: 95%;
+}
+
+/* other styles */
+.URL {
+    color: #d25050;
+    text-decoration: underline;
+    transition: all 0.2s;
+}
+.URL:hover {
+    color: #ff6161;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Source-Code-URL::after {
+    content: 'GitHub Repository';
+    color: #d25050;
+    text-decoration: underline;
+    transition: all 0.2s;
+}
+.Source-Code-URL:hover::after {
+    color: #ff6161;
+    cursor: pointer;
+    text-decoration: none;
+}
