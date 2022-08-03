@@ -1,0 +1,134 @@
+/*
+styles referring to all the .html files                              */
+* {
+    /* basic settings */
+    margin: 0;
+    padding: 0;
+
+    /* animation settings */
+    scroll-behavior: smooth;
+    transition: all 0.4s ease 0s;
+
+    /* font settings */
+    font-family: 'IBM Plex Mono', 'Fira Code', Consolas, 'Courier New', monospace;
+    font-weight: 500;
+    font-style: normal;
+
+    /* background and color settings */
+    background: #1d2029;
+    color: #e9ecef;
+
+    /* other settings */
+    box-sizing: border-box;
+    user-select: none;
+    word-spacing: 2px;
+    letter-spacing: 0.5;
+}
+
+/* circle mouse follower */
+.circle {
+    color: #d25050;
+    z-index: 1;
+    position: absolute;
+    transform: translate(20% , 80%);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid  #d25050;
+    transition: transform 0.5s;
+    background: #d25050b7;
+}
+
+.circle.active-theme-0 {
+    border: 1px solid transparent;
+    background: transparent;
+}
+.circle.active-theme-1 {
+    transform: translate(-50% , -50%) scale(3);
+    border: 1px solid #d25050;
+    background: #d25050b7;
+}
+.circle.active-theme-2 {
+    transform: translate(-50% , -50%) scale(3);
+    border: 1px solid #e9ecef;
+    background: #e9ecefad;
+}
+.circle.active-theme-3 {
+    transform: translate(-50% , -50%) scale(3);
+    border: 1px solid #ff2;
+    background: #ffff22a7;
+}
+.circle.active-theme-4 {
+    transform: translate(-50% , -50%) scale(3);
+    border: 1px solid #00ff4c;
+    background: #00ff4cac;
+}
+
+/*=============================================================================================================================*/
+
+/*
+disabling the scrollbar of the .html pages                           */
+body {
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/*=============================================================================================================================*/
+
+/*
+special color                                                        */
+.Special-Color {
+    color: #ff2;
+}
+
+/*=============================================================================================================================*/
+
+/*
+Editing the navigation bar on the screens                            */
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background: #1d2023;
+}
+.Navigation-Bar {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+.Navigation-Bar ul {
+    justify-content: center;
+    background: #1d2023;
+}
+.Navigation-Bar ul li {
+    background: #1d2023;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 30px;
+    position: relative;
+}
+.Navigation-Bar ul li a {
+    font-size: larger;
+    color: #d25050;
+    text-decoration: none;
+    transition: all 0.1s ease 0s;
+    background: #1d2023;
+}
+.Navigation-Bar ul li a:hover {
+    color: #d25050a0;
+}
+.Navigation-Bar ul li::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #e9ecef;
+    display: block;
+    margin: auto;
+    transition: all 0.3s ease 0s;
+}
+.Navigation-Bar ul li:hover::after {
+    width: 100%;
+}
