@@ -1,0 +1,47 @@
+/* Dark Theme */
+
+/*
+styles referring to .html files with buttons                         */
+.Scroll-To-Top-Button {
+    text-decoration: none;
+    font-size: medium;
+    color:#d25050;
+    padding: 10px 15px;
+    border: 2px solid #b3b6b8;
+    border-radius: 50px;
+    position: relative;
+    transition: all 0.2s ease 0s;
+    background: transparent;
+    z-index: 0;
+}
+.Scroll-To-Top-Button:hover {
+    cursor: pointer;
+    background: #d25050;
+    border: 2px solid #d25050;
+    color: #fff;
+}
+
+/*=============================================================================================================================*/
+
+.Contact-Me-Button-Welcome-Screen {
+    display: inline-block;
+    text-decoration: none;
+    color: #d25050;
+    border: 1px solid #c0c0c2;
+    border-radius: 3px;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: absolute;
+    justify-content: center;
+    transform: translate(-50%);
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease 0s;
+}
+.Contact-Me-Button-Welcome-Screen:hover {
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #d25050;
+    background: #d25050;
+}
