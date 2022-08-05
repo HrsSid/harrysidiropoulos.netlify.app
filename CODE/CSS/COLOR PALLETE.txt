@@ -1,2 +1,0 @@
-text color: "#e9ecef" , :hover {"#959595"}
-background color: "#1d2023"
