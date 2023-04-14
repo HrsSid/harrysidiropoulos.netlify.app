@@ -205,7 +205,7 @@ nav {
     visibility: visible;
     animation: fade 4s linear forwards;
 }
-.notification.active p {
+.notification p {
     background: #1d2023;
 }
 .progress.active {
